@@ -1,0 +1,19 @@
+.bg {
+  background-color: #f8f7fb;
+}
+.bgLoader {
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loadingClass {
+    border-top: 2px solid #6457df;
+
+    border-left: 2px solid #6457df;
+    height: 30px;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #6457df;
+    width: 30px;
+  }
+}

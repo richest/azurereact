@@ -1,0 +1,25 @@
+@use "style/_colors.scss" as c;
+
+.btn {
+  background-color: c.$btn;
+  border-radius: 7px;
+  color: #fff;
+  padding: 9px 13px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  .image {
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+  }
+  .loaderClass {
+    width: 24px;
+    height: 24px;
+  }
+}

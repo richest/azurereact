@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a557a0cd.css",
+    "main.js": "/static/js/main.273276d8.js",
+    "static/media/home.jpeg": "/static/media/home.b83cf0d96af342ae658a.jpeg",
+    "static/media/blog.jpg": "/static/media/blog.64839b10f04a4abc2587.jpg",
+    "static/media/calculator.jpeg": "/static/media/calculator.01387104d04b2a7c640c.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.01387104d04b2a7c640c.jpeg",
+    "static/media/auth-bg.png": "/static/media/auth-bg.175b126e218595495c96.png",
+    "static/media/notification.svg?s3g3t9": "/static/media/notification.5d0158671dd860c714c4.svg",
+    "static/media/notification.eot": "/static/media/notification.3657084dc0419605a91c.eot",
+    "static/media/notification.woff?s3g3t9": "/static/media/notification.c392cd33d9d9de730f9d.woff",
+    "static/media/notification.ttf?s3g3t9": "/static/media/notification.c5d9251ea82e42f75381.ttf",
+    "static/media/google.svg": "/static/media/google.ac436f8c18e2cce7ad45e05815170dac.svg",
+    "static/media/twitter.svg": "/static/media/twitter.eee239514a7e058b1bfcac1ff3cdc105.svg",
+    "static/media/fb.svg": "/static/media/fb.1a3c4447602d9ac4e288a465e97cd0d7.svg",
+    "index.html": "/index.html",
+    "static/media/accending-decending.svg": "/static/media/accending-decending.93b60084a085901cfd8478403052754d.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.bf77914ea827aeadc1500d4cd5625b66.svg",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.1cecbe6d27095ad7edf06f49683dec52.svg",
+    "main.a557a0cd.css.map": "/static/css/main.a557a0cd.css.map",
+    "main.273276d8.js.map": "/static/js/main.273276d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a557a0cd.css",
+    "static/js/main.273276d8.js"
+  ]
+}

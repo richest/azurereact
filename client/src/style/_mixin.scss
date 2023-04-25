@@ -1,0 +1,31 @@
+@import "./_breakpoints.scss";
+
+@mixin gridTwo($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+}
+@mixin gridThree($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+}
+@mixin gridFour($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+}
+
+@mixin gridOne($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+}

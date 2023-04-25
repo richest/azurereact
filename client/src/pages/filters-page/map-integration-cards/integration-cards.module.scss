@@ -1,0 +1,32 @@
+@use "style/_colors.scss" as c;
+@use "style/breakpoints";
+@import "style/mixin";
+
+.main {
+  margin-top: 20px;
+  height: calc(100vh - 187px);
+  @media (max-width: 1420px) {
+    height: calc(100vh - 244px);
+  }
+  .mapPage {
+    @include gridTwo(20, 15);
+    .map {
+      // width: 100%;
+      position: relative;
+      height: 100%;
+    }
+    .cards {
+      @media (max-width: 1420px) {
+        max-height: calc(100vh - 244px);
+      }
+      max-height: calc(100vh - 187px);
+      overflow-y: auto;
+    }
+  }
+  .noDataFound {
+    text-align: center;
+    font-size: 20px;
+    color: c.$gray;
+    padding-top: 50px;
+  }
+}

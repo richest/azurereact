@@ -1,0 +1,57 @@
+@use "style/_colors.scss" as c;
+
+@use "style/breakpoints";
+@import "style/mixin";
+
+.header_wrapper {
+  width: 100%;
+
+  position: relative;
+
+  .header_container {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    h1 {
+      color: #ffffff;
+      font-size: 28px;
+    }
+    form {
+      max-width: 650px;
+      width: 100%;
+      .field {
+        margin-top: 23px;
+        margin-bottom: 10px;
+        & div {
+          height: 50px;
+        }
+      }
+      .btnDiv {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .searchBtn {
+          width: 90px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+.header_wrapper::before {
+  content: "";
+  background-image: url("../../assets/home.jpeg");
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  // opacity: 0.75;
+}

@@ -1,0 +1,151 @@
+@use "style/_colors.scss" as c;
+@use "style/breakpoints";
+@import "style/mixin";
+
+.cards_wrapper {
+  @include gridTwo(12, 12);
+  width: 100%;
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardDiv {
+    box-shadow: 0px 0px 30px 1px #e0ebe6;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .img {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+      height: 150px;
+      img {
+        width: 100%;
+        // object-fit: cover;
+        height: 100%;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          -o-transform: scale(1.05);
+        }
+      }
+    }
+    & .h1 {
+      color: c.$title;
+      font-size: 16px;
+      margin: 5px 0 5px 0;
+    }
+    & .p {
+      font-size: 18px;
+      color: c.$gray;
+      margin-top: 10px;
+      text-align: left;
+    }
+    .button {
+      color: c.$btn;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      .btn1 {
+        width: 50%;
+        border: none;
+        background-color: #e7750b;
+        color: white;
+        padding: 10px;
+        border-radius: 0px 0px 0px 5px;
+        cursor: pointer;
+      }
+      .btn2 {
+        width: 50%;
+        border: none;
+        background-color: #44a8bb;
+        color: white;
+        padding: 10px;
+        border-radius: 0px 0px 5px 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.mapPage {
+  @include gridTwo(20, 30);
+
+  .map {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.modalFilter {
+  max-width: 1000px !important;
+}
+
+.cardsModal {
+  @include gridOne(20, 20);
+}
+
+.select {
+  border: 1px solid c.$btn;
+  color: c.$btn;
+  font-size: 14px;
+  border-radius: 7px;
+  max-width: 120px;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 5px;
+  cursor: pointer;
+  height: 42px;
+  background: transparent;
+}
+.active_select {
+  background-color: c.$btn;
+  color: white;
+}
+
+.totalFilter {
+  color: c.$gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.flexx {
+  border: 1px solid #6457df;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  max-width: 120px;
+  height: 42px;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+  }
+  p {
+    margin-right: 6px;
+    font-weight: 500;
+    color: #485b80;
+    font-size: 14px;
+  }
+}

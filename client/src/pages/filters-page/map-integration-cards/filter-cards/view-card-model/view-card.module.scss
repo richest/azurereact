@@ -1,0 +1,101 @@
+@use "style/_colors.scss" as c;
+@use "style/breakpoints";
+@import "style/mixin";
+
+.cardsModal {
+  @include gridOne(11, 11);
+  width: 100%;
+
+  .cardDiv {
+    box-shadow: 0px 0px 30px 1px #e0ebe6;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .img {
+      width: 100%;
+      overflow: hidden;
+      height: 150px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          -o-transform: scale(1.05);
+        }
+      }
+    }
+    & .h1 {
+      color: c.$title;
+
+      font-size: 16px;
+      margin: 5px 0 5px 0;
+    }
+    & .p {
+      font-size: 18px;
+      color: c.$gray;
+      margin-top: 10px;
+      text-align: left;
+    }
+    .button {
+      color: c.$btn;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      .btn1 {
+        width: 50%;
+        border: none;
+        background-color: #d67e2c;
+        color: white;
+        padding: 10px;
+        border-radius: 0px 0px 0px 5px;
+        cursor: pointer;
+      }
+      .btn2 {
+        width: 50%;
+        border: none;
+        background-color: #1ab1cd;
+        color: white;
+        padding: 10px;
+        border-radius: 0px 0px 5px 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.mapPage {
+  @include gridTwo(12, 12);
+
+  .map {
+    width: 100%;
+    position: relative;
+  }
+  .cards {
+  }
+}
+
+.modalFilter {
+  max-width: 1000px !important;
+}

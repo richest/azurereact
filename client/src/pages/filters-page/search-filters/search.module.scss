@@ -1,0 +1,121 @@
+@use "style/_colors.scss" as c;
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding-top: 25px;
+  @media (max-width: 1420px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fieldDiv {
+    display: flex;
+    align-items: center;
+    .field {
+      margin-right: 10px;
+      width: 500px;
+    }
+    .btn {
+      width: 100px;
+    }
+  }
+  .filtersDiv {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1420px) {
+      margin-top: 15px;
+    }
+    .btn1 {
+      border: 1px solid c.$btn;
+      background-color: transparent;
+      color: c.$btn;
+      margin-left: 10px;
+    }
+    .active {
+      background-color: c.$btn;
+      color: white;
+    }
+  }
+}
+
+.btn2 {
+  border: 1px solid c.$btn;
+  background-color: transparent;
+  color: c.$btn;
+  margin-top: 20px;
+}
+.btn3 {
+  border: 1px solid c.$btn;
+  background-color: transparent;
+  color: c.$btn;
+}
+// price-range
+.priceRange {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 30px 1px #e0ebe6;
+  padding: 20px 15px;
+  border-radius: 8px;
+  left: 0;
+  top: 50px;
+  z-index: 2000;
+  width: 350px;
+  .price {
+    font-size: 18px;
+    font-weight: 600;
+    color: c.$gray;
+  }
+  .active_P {
+    background-color: c.$btn;
+    color: white;
+  }
+  .homeType_p {
+    padding: 0 20px;
+    &:hover {
+      background-color: c.$btn;
+      color: white;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    .field {
+      margin-right: 15px;
+    }
+  }
+}
+// Bath, bed, and Home-type:
+.modal {
+  max-width: 310px !important;
+  .active {
+    background: c.$btn;
+    color: white;
+  }
+}
+.modalCounter {
+  border: 1px solid c.$btn;
+  border-radius: 4px;
+  max-width: 140px;
+  margin-top: 20px;
+  .modalFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: c.$btn;
+      font-size: 16px;
+      padding: 10px;
+      width: 50px;
+      text-align: center;
+    }
+    .active {
+      background: c.$btn;
+      color: white;
+    }
+  }
+}

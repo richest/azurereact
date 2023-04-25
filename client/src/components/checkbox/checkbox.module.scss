@@ -1,0 +1,57 @@
+@use "style/_colors.scss" as c;
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  p {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 140%;
+    color: c.$gray;
+    margin-left: 10px;
+  }
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    &:checked ~ .checkmark {
+      background: c.$btn;
+      border-color: c.$btn;
+      &::after {
+        display: block;
+      }
+    }
+  }
+  .checkmark {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 2px solid #cdd2d5;
+    display: inline-block;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 3.4px;
+      top: 0px;
+      width: 3px;
+      height: 7px;
+      display: none;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

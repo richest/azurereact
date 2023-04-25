@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 10px 0;
+
+  img {
+    cursor: pointer;
+    width: 100px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    .btn {
+      width: 100px;
+      margin-left: 15px;
+    }
+  }
+}
